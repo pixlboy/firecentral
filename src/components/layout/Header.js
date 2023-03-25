@@ -30,6 +30,7 @@ const Header = ({
   ...props
 }) => {
   const [isActive, setIsactive] = useState(false);
+  const [isShowProjectMenu, setIsShowProjectMenu] = useState(false);
 
   const nav = useRef(null);
   const hamburger = useRef(null);
@@ -78,6 +79,11 @@ const Header = ({
     className
   );
 
+  const toggleProjectMenu = () => {
+    const val = !isShowProjectMenu;
+    setIsShowProjectMenu(val);
+  };
+
   return (
     <header {...props} className={classes}>
       <div className="container">
@@ -111,14 +117,58 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}
                   >
-                    <li>
-                      <Link to="#0" onClick={closeMenu}>
-                        About Us
+                    <li className="services-menu">
+                      <div className="link-wrapper">
+                        <div
+                          onMouseEnter={toggleProjectMenu}
+                          onMouseLeave={toggleProjectMenu}
+                          onClick={toggleProjectMenu}
+                          className="cursor-pointer"
+                        >
+                          <span>Services</span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="7"
+                            viewBox="0 0 13 7"
+                            fill="#9CA9B3"
+                            className="d-inline ml-4"
+                          >
+                            <path d="M12 0.5L6.5 5.5L1 0.5" />
+                          </svg>
+                        </div>
+                        <div className={`item-link-menu`}>
+                          <Link to="/fdas" className="item-link">
+                            FDAS
+                          </Link>
+                          <Link to="/sprinkler" className="item-link">
+                            Sprinkler
+                          </Link>
+                          <Link to="/supression" className="item-link">
+                            Supression
+                          </Link>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="services-menu-mobile">
+                      <Link to="/fdas">
+                        FDAS
                       </Link>
                     </li>
+                    <li className="services-menu-mobile">
+                      <Link to="/sprinkler">
+                        Sprinkler
+                      </Link>
+                    </li>
+                    <li className="services-menu-mobile">
+                      <Link to="/supression">
+                        Supression
+                      </Link>
+                    </li>
+
                     <li>
-                      <Link to="#0" onClick={closeMenu}>
-                        Contact
+                      <Link to="/contact" onClick={closeMenu}>
+                        Contact us
                       </Link>
                     </li>
                   </ul>

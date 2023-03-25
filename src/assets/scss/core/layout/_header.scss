@@ -61,6 +61,32 @@
     }
   }
 
+  .services-menu-mobile {
+    display: none;
+  }
+
+  .item-link-menu {
+    position: absolute;
+    top: -5rem;
+    opacity: 0;
+    transition: all ease 700ms;
+    border: 1px solid #9ca9b3;
+  }
+
+  .link-wrapper {
+    position: relative;
+    &:hover {
+      .item-link-menu {
+        opacity: 1;
+        top: 2rem;
+      }
+    }
+  }
+
+  .item-link {
+    padding: 5px 15px !important;
+  }
+
   a.button {
     margin-left: $header-nav--padding-h;
   }
@@ -84,6 +110,14 @@
 }
 
 @include media("<=medium") {
+  .header-nav {
+    .services-menu {
+      display: none;
+    }
+    .services-menu-mobile {
+      display: block;
+    }
+  }
   .header-nav-toggle {
     display: block;
 
