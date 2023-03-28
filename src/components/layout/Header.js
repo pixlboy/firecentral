@@ -139,33 +139,32 @@ const Header = ({
                         </div>
                         <div className={`item-link-menu`}>
                           <Link to="/fdas" className="item-link">
-                            FDAS
+                            Fire Alarm Systems
                           </Link>
                           <Link to="/sprinkler" className="item-link">
-                            Sprinkler
+                            Fire Sprinkler Systems
                           </Link>
                           <Link to="/supression" className="item-link">
-                            Supression
+                            Fire Suppression Systems
+                          </Link>
+                          <Link to="/hydrant" className="item-link">
+                            Fire Hydrant Systems
                           </Link>
                         </div>
                       </div>
                     </li>
                     <li className="services-menu-mobile">
-                      <Link to="/fdas">
-                        FDAS
-                      </Link>
+                      <Link to="/fdas">Fire Alarm Systems</Link>
                     </li>
                     <li className="services-menu-mobile">
-                      <Link to="/sprinkler">
-                        Sprinkler
-                      </Link>
+                      <Link to="/sprinkler">Fire Sprinkler Systems</Link>
                     </li>
                     <li className="services-menu-mobile">
-                      <Link to="/supression">
-                        Supression
-                      </Link>
+                      <Link to="/supression">Fire Suppression Systems</Link>
                     </li>
-
+                    <li className="services-menu-mobile">
+                      <Link to="/hydrant">Fire Hydrant Systems</Link>
+                    </li>
                     <li>
                       <Link to="/contact" onClick={closeMenu}>
                         Contact us
