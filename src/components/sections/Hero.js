@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import Image from "../elements/Image";
-import Modal from "../elements/Modal";
 
 const propTypes = {
   ...SectionProps.types,
@@ -22,17 +21,6 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
-  const [videoModalActive, setVideomodalactive] = useState(false);
-
-  const openModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(true);
-  };
-
-  const closeModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(false);
-  };
 
   const outerClasses = classNames(
     "hero section center-content",
@@ -44,7 +32,7 @@ const Hero = ({
   );
 
   const innerClasses = classNames(
-    "hero-inner section-inner",
+    "hero-inner section-inner pt-32",
     topDivider && "has-top-divider",
     bottomDivider && "has-bottom-divider"
   );
@@ -61,13 +49,14 @@ const Hero = ({
               Welcome to <span className="text-color-primary">Firecentral</span>{" "}
               Melbourne
             </h1>
-            <div className="container-xs">
+            <div className="container-sm">
               <p
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                Providing the very best fire protection solutions at affordable
+                rates. We offer all services necessary to address your fire
+                protection needs across Melbourne.
               </p>
             </div>
           </div>
@@ -76,28 +65,14 @@ const Hero = ({
             data-reveal-value="20px"
             data-reveal-delay="800"
           >
-            <a
-              data-video="https://player.vimeo.com/video/174002812"
-              href="#0"
-              aria-controls="video-modal"
-              onClick={openModal}
-            >
-              <Image
-                className="has-shadow"
-                src={require("./../../assets/images/video-placeholder.jpg")}
-                alt="Hero"
-                width={896}
-                height={504}
-              />
-            </a>
+            <Image
+              className="greyscale-01"
+              src={require("./../../assets/images/hero.jpg")}
+              alt="Hero"
+              width={896}
+              height={504}
+            />
           </div>
-          <Modal
-            id="video-modal"
-            show={videoModalActive}
-            handleClose={closeModal}
-            video="https://player.vimeo.com/video/174002812"
-            videoTag="iframe"
-          />
         </div>
       </div>
     </section>

@@ -144,9 +144,6 @@ blockquote {
 }
 
 address {
-	border-width: 1px 0;
-	border-style: solid;
-	border-color: color-border(divider);
 	padding: $spacing--shared-v 0;
 	margin: 0 0 $spacing--shared-v;
 }

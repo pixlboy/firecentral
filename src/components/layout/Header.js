@@ -122,7 +122,6 @@ const Header = ({
                         <div
                           onMouseEnter={toggleProjectMenu}
                           onMouseLeave={toggleProjectMenu}
-                          onClick={toggleProjectMenu}
                           className="cursor-pointer"
                         >
                           <span>Services</span>
@@ -154,16 +153,24 @@ const Header = ({
                       </div>
                     </li>
                     <li className="services-menu-mobile">
-                      <Link to="/fdas">Fire Alarm Systems</Link>
+                      <Link to="/fdas" onClick={closeMenu}>
+                        Fire Alarm Systems
+                      </Link>
                     </li>
                     <li className="services-menu-mobile">
-                      <Link to="/sprinkler">Fire Sprinkler Systems</Link>
+                      <Link to="/sprinkler" onClick={closeMenu}>
+                        Fire Sprinkler Systems
+                      </Link>
                     </li>
                     <li className="services-menu-mobile">
-                      <Link to="/supression">Fire Suppression Systems</Link>
+                      <Link to="/supression" onClick={closeMenu}>
+                        Fire Suppression Systems
+                      </Link>
                     </li>
                     <li className="services-menu-mobile">
-                      <Link to="/hydrant">Fire Hydrant Systems</Link>
+                      <Link to="/hydrant" onClick={closeMenu}>
+                        Fire Hydrant Systems
+                      </Link>
                     </li>
                     <li>
                       <Link to="/contact" onClick={closeMenu}>

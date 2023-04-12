@@ -9,7 +9,9 @@
   white-space: nowrap;
   border: 0;
 }
-
+.greyscale-01{
+  filter: grayscale(1);
+}
 .d-flex {
   display: flex;
 }

@@ -4,6 +4,7 @@ import { SectionTilesProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
 import svg from "../../assets/images/feature-tile-icon-01.svg";
+import { Link } from "react-router-dom";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -67,37 +68,14 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Fire Detection & Alarm Systems</h4>
+                  <Link to="/fdas" className="item-link">
+                    <h4 className="mt-0 mb-8">
+                      Fire Detection & Alarm Systems
+                    </h4>
+                  </Link>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="tiles-item reveal-from-bottom"
-              data-reveal-delay="200"
-            >
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={svg}
-                      alt="Features tile icon 02"
-                      width={64}
-                      height={64}
-                    />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Emergency Warning & Intercom Systems</h4>
-                  <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    A fire alarm system is an early detection and warning system
+                    designed to alert occupants of a fire.
                   </p>
                 </div>
               </div>
@@ -119,60 +97,13 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Fire Sprinkler Systems</h4>
+                  <Link to="/sprinkler" className="item-link">
+                    <h4 className="mt-0 mb-8">Fire Sprinkler Systems</h4>
+                  </Link>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={svg}
-                      alt="Features tile icon 04"
-                      width={64}
-                      height={64}
-                    />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Fire Hydrant Systems</h4>
-                  <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="tiles-item reveal-from-bottom"
-              data-reveal-delay="200"
-            >
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={svg}
-                      alt="Features tile icon 05"
-                      width={64}
-                      height={64}
-                    />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Fire Pumps and Tanks</h4>
-                  <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    Fire sprinkler systems are vital installations that help
+                    protect buildings and the people inside them in the event of
+                    a fire.
                   </p>
                 </div>
               </div>
@@ -194,11 +125,38 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Gas Suppression System</h4>
+                  <Link to="/supression">
+                    <h4 className="mt-0 mb-8">Fire Suppression System</h4>
+                  </Link>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    In instances where you are fighting electrical fires,
+                    certain chemicals, metals, or flammable materials less dense
+                    than water, you need a specialty system to extinguish fires.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={svg}
+                      alt="Features tile icon 04"
+                      width={64}
+                      height={64}
+                    />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <Link to="/hydrant">
+                    <h4 className="mt-0 mb-8">Fire Hydrant Systems</h4>
+                  </Link>
+                  <p className="m-0 text-sm">
+                    It is a network of pipes, valves and outlets connected to an
+                    underground water supply that can provide a reliable source
+                    of water during a fire emergency.
                   </p>
                 </div>
               </div>

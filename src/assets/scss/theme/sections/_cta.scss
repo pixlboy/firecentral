@@ -2,14 +2,21 @@
   .form-input {
     border-color: transparent;
     border-radius: 2px;
+    width: 100%;
+  }
+  .form-items {
+    width: 100%;
+  }
+  .address-items {
+    padding-top: 80px;
+    width: 100%;
   }
 }
 
 .cta-inner {
   padding-left: 16px;
   padding-right: 16px;
-  background-color: get-color(primary, 3);
-  background-image: url(../../../images/cta-illustration.svg);
+  background-image: url(../../../images/illustration-section-01.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right bottom;
@@ -17,13 +24,17 @@
 
 @include media(">medium") {
   .cta {
-    .form-input {
-      min-width: 640px;
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-  }
-
-  .cta-inner {
-    padding-left: 48px;
-    padding-right: 48px;
+    .form-items {
+      width: 50%;
+    }
+    .address-items {
+      padding-top: 0;
+      width: 30%;
+    }
   }
 }
