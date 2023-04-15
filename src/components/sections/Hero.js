@@ -1,7 +1,10 @@
 import React from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
-import Image from "../elements/Image";
+import { Carousel } from "react-carousel-minimal";
+import image1 from "./../../assets/images/image1.jpg";
+import image2 from "./../../assets/images/image2.jpg";
+import image3 from "./../../assets/images/image3.jpg";
 
 const propTypes = {
   ...SectionProps.types,
@@ -21,6 +24,29 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
+  const data = [
+    {
+      image: image1,
+      caption: `<div>
+                  <h4 class="m-16">OUR GOAL</h4>
+                  Providing the very best fire protection solutions at affordable rates
+                </div>`,
+    },
+    {
+      image: image2,
+      caption: `<div>
+                  <h4 class="m-16">YOUR SAFETY</h4>
+                  We design, install, inspect and maintain all systems to absolute client safety and code compliance
+                </div>`,
+    },
+    {
+      image: image3,
+      caption: `<div>
+                  <h4 class="m-16">FULL-SERVICE FIRE PROTECTION COMPANY</h4>
+                  We offer all services necessary to address your fire protection needs across Melbourne
+                </div>`,
+    },
+  ];
 
   const outerClasses = classNames(
     "hero section center-content",
@@ -43,35 +69,26 @@ const Hero = ({
         <div className={innerClasses}>
           <div className="hero-content">
             <h1
-              className="mt-0 mb-16 reveal-from-bottom"
+              className="mt-0 mb-32 reveal-from-bottom"
               data-reveal-delay="200"
             >
               Welcome to <span className="text-color-primary">Firecentral</span>{" "}
               Melbourne
             </h1>
-            <div className="container-sm">
-              <p
-                className="m-0 mb-32 reveal-from-bottom"
-                data-reveal-delay="400"
-              >
-                Providing the very best fire protection solutions at affordable
-                rates. We offer all services necessary to address your fire
-                protection needs across Melbourne.
-              </p>
-            </div>
           </div>
-          <div
-            className="hero-figure reveal-from-bottom illustration-element-01"
-            data-reveal-value="20px"
-            data-reveal-delay="800"
-          >
-            <Image
-              className="greyscale-01"
-              src={require("./../../assets/images/hero.jpg")}
-              alt="Hero"
-              width={896}
-              height={504}
-            />
+          <div className="hero-figure mt-32 reveal-from-bottom illustration-element-01">
+            <Carousel
+              data={data}
+              time={5000}
+              width="100%"
+              height="500px"
+              slideNumber={false}
+              automatic={true}
+              dots={false}
+              slideImageFit="cover"
+              pauseIconColor="white"
+              thumbnails={false}
+            />{" "}
           </div>
         </div>
       </div>

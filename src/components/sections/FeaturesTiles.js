@@ -3,7 +3,10 @@ import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
-import svg from "../../assets/images/feature-tile-icon-01.svg";
+import svg1 from "../../assets/images/feature-tile-icon-01.svg";
+import svg2 from "../../assets/images/feature-tile-icon-01.svg";
+import svg3 from "../../assets/images/feature-tile-icon-01.svg";
+import svg4 from "../../assets/images/feature-tile-icon-01.svg";
 import { Link } from "react-router-dom";
 
 const propTypes = {
@@ -60,7 +63,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={svg}
+                      src={svg1}
                       alt="Features tile icon 01"
                       width={64}
                       height={64}
@@ -89,7 +92,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={svg}
+                      src={svg2}
                       alt="Features tile icon 03"
                       width={64}
                       height={64}
@@ -117,7 +120,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={svg}
+                      src={svg3}
                       alt="Features tile icon 06"
                       width={64}
                       height={64}
@@ -142,7 +145,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={svg}
+                      src={svg4}
                       alt="Features tile icon 04"
                       width={64}
                       height={64}
