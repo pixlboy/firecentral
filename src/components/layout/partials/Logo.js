@@ -10,7 +10,7 @@ const Logo = ({ className, ...props }) => {
   return (
     <div {...props} className={classes}>
       <Link to="/">
-        <Image src={svg} alt="Open" width={140} />
+        <Image src={svg} alt="Open" width={200} />
       </Link>
     </div>
   );

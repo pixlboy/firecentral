@@ -15,7 +15,7 @@
 .d-inline {
   display: inline;
 }
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
 // Reset lists style
@@ -73,6 +73,12 @@
 
 .text-color-primary {
   color: color(primary);
+}
+
+.text-color-gradient {
+  background: linear-gradient(#ef3034, #fabb1a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-color-secondary {

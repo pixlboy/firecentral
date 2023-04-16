@@ -36,7 +36,7 @@ const Hero = ({
       image: image2,
       caption: `<div>
                   <h4 class="m-16">YOUR SAFETY</h4>
-                  We design, install, inspect and maintain all systems to absolute client safety and code compliance
+                  <p>We design, install, inspect and maintain all systems to absolute client safety and code compliance</p>
                 </div>`,
     },
     {
@@ -68,13 +68,13 @@ const Hero = ({
       <div className="container-sm">
         <div className={innerClasses}>
           <div className="hero-content">
-            <h1
+            <h3
               className="mt-0 mb-32 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              Welcome to <span className="text-color-primary">Firecentral</span>{" "}
-              Melbourne
-            </h1>
+              Welcome to{" "}
+              <span className="text-color-gradient">Firecentral</span> Melbourne
+            </h3>
           </div>
           <div className="hero-figure mt-32 reveal-from-bottom illustration-element-01">
             <Carousel
