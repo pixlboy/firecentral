@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import Image from "../../elements/Image";
-import svg from "../../../assets/images/logo.png";
+import svg from "../../../assets/images/logo-full.png";
 
 const Logo = ({ className, ...props }) => {
   const classes = classNames("brand", className);
@@ -10,7 +10,7 @@ const Logo = ({ className, ...props }) => {
   return (
     <div {...props} className={classes}>
       <Link to="/">
-        <Image src={svg} alt="Open" width={40} height={40} />
+        <Image src={svg} alt="Open" width={140} />
       </Link>
     </div>
   );
