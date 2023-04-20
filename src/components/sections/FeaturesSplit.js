@@ -50,8 +50,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: "Additional Services",
-    paragraph:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
+    paragraph: "We provide the following services in addition to the above.",
   };
 
   return (
@@ -66,15 +65,42 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Sample text{" "}
+                  Organize | Plan | Evaluate
                 </div>
-                <h3 className="mt-0 mb-12"> Design & Engineering</h3>
+                <h3 className="mt-0 mb-12">Project Management</h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  — Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  At Fire Central, we will plan, organize and manage your
+                  project to ensure that it delivers on time and within budget.
+                  Our efficient job costing, and productivity reporting allow us
+                  to manage each project with accurate and up to date
+                  information.
                 </p>
+                <p>At Fire Central:</p>
+                <ul>
+                  <li>
+                    We are responsible for total delivery of the project in
+                    accordance with established criteria.
+                  </li>
+                  <li>
+                    We conduct long range project planning and scheduling.
+                  </li>
+                  <li>
+                    We monitor and manage projects to comply with safety,
+                    quality, and applicable Australian standards.
+                  </li>
+                  <li>
+                    We review drawings as well as field check all stages of the
+                    project.
+                  </li>
+                  <li>
+                    We provide regular progress reports to our customers on the
+                    project.
+                  </li>
+                  <li>
+                    We participate in the evaluation of completed jobs to ensure
+                    full acceptance.
+                  </li>
+                </ul>
               </div>
               <div
                 className={classNames(
@@ -84,10 +110,8 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require("./../../assets/images/features-split-image-01.png")}
+                  src={require("./../../assets/images/add-image-01.jpg")}
                   alt="Features split 01"
-                  width={528}
-                  height={396}
                 />
               </div>
             </div>
@@ -98,17 +122,26 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Sample text{" "}
+                  Maintain | Test | Warn
                 </div>
-                <h3 className="mt-0 mb-12">
-                  Fire Systems Inspection, Testing & Maintenance
-                </h3>
+                <h3 className="mt-0 mb-12">ESM Maintenance</h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  — Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  ESM Maintenance is a periodic inspection, testing and
+                  preventive maintenance services applicable to fire protection
+                  systems and equipment in accordance with AS1851.
                 </p>
+                <p>
+                  At Fire Central, we can look after your Essential Safety
+                  Services Equipment including:
+                </p>
+                <ul>
+                  <li>Smoke and Heat Detection Systems</li>
+                  <li>Building Occupant Warning Systems</li>
+                  <li>Fire Sprinkler Systems</li>
+                  <li>Fire Hydrant Systems</li>
+                  <li>Fire Hose Reel Systems</li>
+                  <li>Portable Fire Extinguishers</li>
+                </ul>
               </div>
               <div
                 className={classNames(
@@ -118,7 +151,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require("./../../assets/images/features-split-image-02.png")}
+                  src={require("./../../assets/images/add-image-02.jpg")}
                   alt="Features split 02"
                   width={528}
                   height={396}
@@ -132,15 +165,43 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Sample text
+                  Prevent | Protect | Evacuate
                 </div>
-                <h3 className="mt-0 mb-12">Project Management </h3>
+                <h3 className="mt-0 mb-12">EVAC &amp; Block Plans</h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  — Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Australian Standard AS3735-2010 mandates the requirement of
+                  having an emergency evacuation plan for your facility and must
+                  be reviewed every five years. These diagrams show vital
+                  information that is essential in case of emergency, and at a
+                  minimum must show the fire equipment, designated exit points,
+                  emergency assembly points & evacuation routes.
                 </p>
+                <p>
+                  Emergency Management Plans and Evacuation Diagrams help to:
+                </p>
+                <ul>
+                  <li>Reduce the effects of an emergency</li>
+                  <li>Prevent personal injuries.</li>
+                  <li>Prevent property damage</li>
+                  <li>Prevent loss of lives in the event of an emergency</li>
+                  <li>Minimise business downtime and interruptions</li>
+                </ul>
+                <p>
+                  A fire block plan includes layout of the building, the fire
+                  protection system configuration installed in the building, and
+                  other critical information to assist fire brigade in the event
+                  of an emergency.
+                </p>
+                <p>
+                  At Fire Central, we can assist you with several type of Block
+                  Plans such as:
+                </p>
+                <ul>
+                  <li>Fire Alarm Block Plans - AS1670.1</li>
+                  <li>EWIS Block Plans - AS1670.4</li>
+                  <li>Sprinkler Block Plans - AS2118.1 </li>
+                  <li>Hydrant Block Plans - AS2419.1</li>
+                </ul>
               </div>
               <div
                 className={classNames(
@@ -150,7 +211,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require("./../../assets/images/features-split-image-03.png")}
+                  src={require("./../../assets/images/add-image-03.jpg")}
                   alt="Features split 03"
                   width={528}
                   height={396}

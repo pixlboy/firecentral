@@ -48,8 +48,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: "What we do",
-    paragraph: "Installation & Upgrades of following systems",
+    title: "What We Do",
+    paragraph: "Installation and Upgrade of following systems",
   };
 
   return (
@@ -70,17 +70,18 @@ const FeaturesTiles = ({
                     />
                   </div>
                 </div>
-                <div className="features-tiles-item-content">
-                  <Link to="/fdas" className="item-link">
+                <Link to="/fdas" className="item-link">
+                  <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">
                       Fire Detection & Alarm Systems
                     </h4>
-                  </Link>
-                  <p className="m-0 text-sm">
-                    A fire alarm system is an early detection and warning system
-                    designed to alert occupants of a fire.
-                  </p>
-                </div>
+                    <p className="m-0 text-sm">
+                      We can equip your facility with required fire alarm and
+                      detection system to meet your specific requirements and
+                      ensure full compliance with latest Australian Standards.
+                    </p>
+                  </div>
+                </Link>
               </div>
             </div>
 
@@ -99,16 +100,18 @@ const FeaturesTiles = ({
                     />
                   </div>
                 </div>
-                <div className="features-tiles-item-content">
-                  <Link to="/sprinkler" className="item-link">
+                <Link to="/sprinkler" className="item-link">
+                  <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">Fire Sprinkler Systems</h4>
-                  </Link>
-                  <p className="m-0 text-sm">
-                    Fire sprinkler systems are vital installations that help
-                    protect buildings and the people inside them in the event of
-                    a fire.
-                  </p>
-                </div>
+                    <p className="m-0 text-sm">
+                      We design, fabricate and install the fire sprinkler
+                      systems for a variety of commercial, industrial and
+                      residential applications, providing the highest level of
+                      fire protection in accordance with latest Australian
+                      Standards.
+                    </p>
+                  </div>
+                </Link>
               </div>
             </div>
 
@@ -127,16 +130,18 @@ const FeaturesTiles = ({
                     />
                   </div>
                 </div>
-                <div className="features-tiles-item-content">
-                  <Link to="/supression">
+                <Link to="/supression">
+                  <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">Fire Suppression System</h4>
-                  </Link>
-                  <p className="m-0 text-sm">
-                    In instances where you are fighting electrical fires,
-                    certain chemicals, metals, or flammable materials less dense
-                    than water, you need a specialty system to extinguish fires.
-                  </p>
-                </div>
+                    <p className="m-0 text-sm">
+                      We can supply and install the gas fire suppression systems
+                      like FM200 & NOVEC1230 which are the environment friendly
+                      fire protection solutions for server rooms, data halls,
+                      control rooms, record stores and many other high value
+                      critical assets.
+                    </p>
+                  </div>
+                </Link>
               </div>
             </div>
 
@@ -152,16 +157,16 @@ const FeaturesTiles = ({
                     />
                   </div>
                 </div>
-                <div className="features-tiles-item-content">
-                  <Link to="/hydrant">
+                <Link to="/hydrant">
+                  <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">Fire Hydrant Systems</h4>
-                  </Link>
-                  <p className="m-0 text-sm">
-                    It is a network of pipes, valves and outlets connected to an
-                    underground water supply that can provide a reliable source
-                    of water during a fire emergency.
-                  </p>
-                </div>
+                    <p className="m-0 text-sm">
+                      We can help you with pre-construction street flow and
+                      pressure testing for your fire hydrant design,
+                      installation, certification and commissioning.
+                    </p>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
