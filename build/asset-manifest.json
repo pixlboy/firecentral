@@ -1,29 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.5df013ee.css",
-    "main.js": "/static/js/main.41f59612.js",
+    "main.css": "/static/css/main.ccdb79d8.css",
+    "main.js": "/static/js/main.65c77a7c.js",
     "static/media/supression1.png": "/static/media/supression1.1f41baf295c6d9c66609.png",
     "static/media/image3.jpg": "/static/media/image3.f6c8224e0a16cd876612.jpg",
+    "static/media/add-image-03.jpg": "/static/media/add-image-03.1e60c9f36f18485f3bfc.jpg",
     "static/media/sprinkler2.jpg": "/static/media/sprinkler2.7fee44eaf5eca43a487a.jpg",
     "static/media/fdas2.jpg": "/static/media/fdas2.59d48b6eaa92afe4f6f9.jpg",
     "static/media/sprinkler1.jpg": "/static/media/sprinkler1.33c82d3c9a0f7b62efad.jpg",
+    "static/media/add-image-02.jpg": "/static/media/add-image-02.6324538e2ca44040332d.jpg",
     "static/media/logo-full.png": "/static/media/logo-full.864a150b3ad85e3f13a2.png",
+    "static/media/add-image-01.jpg": "/static/media/add-image-01.1d41976e6f3f6b817230.jpg",
     "static/media/fdas1.jpg": "/static/media/fdas1.3a5dcde099e51f5f6fc7.jpg",
     "static/media/image2.jpg": "/static/media/image2.8825bb6bc16a20a7c042.jpg",
     "static/media/hydrant1.jpg": "/static/media/hydrant1.e554d584af282b2c9148.jpg",
     "static/media/illustration-section-01.svg": "/static/media/illustration-section-01.58bb6a3180db387a366a.svg",
-    "static/media/features-split-image-01.png": "/static/media/features-split-image-01.94b14c16e7643460bbd8.png",
-    "static/media/features-split-image-03.png": "/static/media/features-split-image-03.7bd671553abb3e7dbbca.png",
-    "static/media/features-split-image-02.png": "/static/media/features-split-image-02.49942613e3afa031ac83.png",
-    "static/media/illustration-section-02.svg": "/static/media/illustration-section-02.f11c21a9745d2454b81c.svg",
+    "static/media/illustration-section-02.svg": "/static/media/illustration-section-02.4a10169a48e94915c9e4.svg",
     "static/media/image1.jpg": "/static/media/image1.06acb45ff8302d22977e.jpg",
     "index.html": "/index.html",
-    "static/media/feature-tile-icon-01.svg": "/static/media/feature-tile-icon-01.e13cef8e30c0472fc8b303cc0801113f.svg",
-    "main.5df013ee.css.map": "/static/css/main.5df013ee.css.map",
-    "main.41f59612.js.map": "/static/js/main.41f59612.js.map"
+    "static/media/feature-tile-icon-01.svg": "/static/media/feature-tile-icon-01.e13cef8e30c0472fc8b303cc0801113f.svg"
   },
   "entrypoints": [
-    "static/css/main.5df013ee.css",
-    "static/js/main.41f59612.js"
+    "static/css/main.ccdb79d8.css",
+    "static/js/main.65c77a7c.js"
   ]
 }

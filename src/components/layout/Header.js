@@ -177,6 +177,11 @@ const Header = ({
                         Contact us
                       </Link>
                     </li>
+                    <li>
+                      <Link to="/about" class="pl-0 pr-0" onClick={closeMenu}>
+                        About us
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </nav>

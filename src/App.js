@@ -10,6 +10,7 @@ import LayoutDefault from "./layouts/LayoutDefault";
 // Views
 import Home from "./views/Home";
 import Contact from "./views/Contact";
+import About from "./views/About";
 import Fdas from "./views/Fdas";
 import Sprinkler from "./views/Sprinkler";
 import Supression from "./views/Supression";
@@ -47,6 +48,13 @@ const App = () => {
             component={Contact}
             layout={LayoutDefault}
           />
+          <AppRoute
+            exact
+            path="/about"
+            component={About}
+            layout={LayoutDefault}
+          />
+
           <AppRoute
             exact
             path="/fdas"

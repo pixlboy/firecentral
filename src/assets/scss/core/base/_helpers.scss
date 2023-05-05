@@ -342,23 +342,23 @@ img.has-shadow {
 
 // Spacing, padding
 .p-0 {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .pt-0 {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 .pr-0 {
-  padding-right: 0;
+  padding-right: 0 !important;
 }
 
 .pb-0 {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 
 .pl-0 {
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 
 .p-4 {
@@ -370,7 +370,7 @@ img.has-shadow {
 }
 
 .pr-4 {
-  padding-right: 4px;
+  padding-right: 4px !important;
 }
 
 .pb-4 {

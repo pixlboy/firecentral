@@ -73,7 +73,7 @@ const Hero = ({
               data-reveal-delay="200"
             >
               Welcome to{" "}
-              <span className="text-color-gradient">Firecentral</span> Melbourne
+              <span className="text-color-gradient">FIRE CENTRAL</span> Melbourne
             </h3>
           </div>
           <div className="hero-figure mt-32 reveal-from-bottom illustration-element-01">
